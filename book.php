@@ -25,7 +25,7 @@ class Book {
     	return $this -> page;
     }
     public function getDetails(){
-    	return 'The' . $name .'of' . 'size' . $size . 'and' . ''page'. $page . 'is of benefit to me';
+    	return 'The' . $name .'of' . 'size' . $size . 'and' . 'page'. $page . 'is of benefit to me';
     }
 
     public function setName($name){
