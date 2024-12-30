@@ -1,7 +1,7 @@
 <?php
 class Book {
 	// Properties
-	public $name;
+    public $name;
     public $size;
     public $page;
 
@@ -28,26 +28,22 @@ class Book {
     	return 'The' . $name .'of' . 'size' . $size . 'and' . 'page'. $page . 'is of benefit to me';
     }
 
-    public function setName($name){
-    	$this -> name = $name;
-    }
-    public function setSize($size){
-    	$this -> size = $size;
-    }
-    public function setPage($page){
-    	$this -> page = $page;
-    }
-
 }
 
 $textBook = new Book ();
 $textBook = setName('textBook');
+$textBook = setSize('big');
+$textBook = setPage('70');
 
 $noteBook = new Book ();
 $noteBook = setName('noteBook');
+$textBook = setSize('big');
+$textBook = setPage('60');
 
 $drawingBook = new Book ();
 $drawingBook = setName('drawingBook');
+$textBook = setSize('small');
+$textBook = setPage('20');
 
 echo $textbook -> getDetails();
 echo "<br><br>";
