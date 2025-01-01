@@ -30,20 +30,11 @@ class Book {
 
 }
 
-$textBook = new Book ();
-$textBook = setName('textBook');
-$textBook = setSize('big');
-$textBook = setPage('70');
+$textBook = new Book ('textBook', 'big', '70');
 
-$noteBook = new Book ();
-$noteBook = setName('noteBook');
-$textBook = setSize('big');
-$textBook = setPage('60');
+$noteBook = new Book ('noteBook', 'big', '60');
 
-$drawingBook = new Book ();
-$drawingBook = setName('drawingBook');
-$textBook = setSize('small');
-$textBook = setPage('20');
+$drawingBook = new Book ('drawingBook', 'small', '20');
 
 echo $textbook -> getDetails();
 echo "<br><br>";
